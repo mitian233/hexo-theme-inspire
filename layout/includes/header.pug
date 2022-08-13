@@ -1,0 +1,14 @@
+header(id='header', class='site-header')
+    section(class='topbar')
+        div(class='inner width')
+            nav(class='nav pull-left')
+                ul(class='nav-menu top-menu icon')
+                    each url, label in theme.topmenu
+                        li(class='menu-item menu-item-type-post_type menu-item-object-page')
+                            a(href=url, one-link-mark='yes')=label
+    section(class='banner bg', style='background-image:url('+theme.bannerPic+')', data-time='20000')
+        div(id='banner-data' style='display:none')
+            img(id='banner-0', src=theme.bannerPic)
+        div(class='sns master-info width')
+            a(href=config.url, class='sns-avatar max' style='margin-bottom: 0px;', one-link-mark='yes')
+                img(src=theme.avatar, width='200', class='avatar avatar-200')

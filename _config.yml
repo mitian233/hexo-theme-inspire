@@ -1,0 +1,47 @@
+
+# html lang
+language: zh
+
+# Top menu
+topmenu:
+  主页: /
+  关于: /about
+  联系: /contact
+  归档: /archives
+
+# appbar navigation
+appbar:
+  Home: /
+  About: /about
+  Contact: /contact
+  Archives: /archives
+
+# avatar
+avatar: /images/avatar.jpg
+
+# Banner
+bannerPic: /images/email.jpg
+
+# Code highlight theme
+# Available themes: arta, dark, default, idea, ocean, rainbow, schoolbook, tomorrow
+highlightTheme: arta
+
+
+# stylesheets loaded in the <head>
+stylesheets:
+- /css/Inspire.css
+- /css/style.css
+- /css/style.mobile.css
+- /css/fonts.css
+- /css/custom.css
+
+# scripts loaded in the end of the body
+scripts:
+- /js/Inspire.js
+- /js/headroom.min.js
+- /js/init.js
+- /js/input.min.js
+- /js/project.js
+- /js/setting.js
+- /js/support.js
+- /js/app.js

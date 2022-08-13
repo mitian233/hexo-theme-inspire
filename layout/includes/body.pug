@@ -1,0 +1,39 @@
+div(id='container', class='site-refresh')
+    section(id='appbar')
+        div(id='fixedbar' class='no')
+            div(class='inner width')
+                div(class='master-info-small pull-left')
+                    div(class='tooltip',style='margin-top: 55px;')
+                        div(class='middle')
+                            div(class='sns-avatar min')
+                                a(href=config.url, one-link-mark='yes')
+                                    img(src=theme.avatar, width='36', class='avatar avatar-36')
+                        div(class='middle-info')
+                            h4(class='blogname')=config.title
+                            div(class='nickname')=config.suthor
+                nav(class='nav pull-left', role='navigation', itemscope, itemtype='http://schema.org/SiteNavigationElement')
+                    ul(class='nav-menu main-menu')
+                        each url, label in theme.appbar
+                            li(class='menu-item menu-item-type-custom menu-item-object-custom')
+                                a(href=url, one-link-mark='yes')=label
+
+#content-outer
+    #content-inner
+        if body
+            div!= body
+        else
+            block content
+#bottom-outer
+    #bottom-inner
+        span Site construction by
+        span= ' ' + config.author + ' '
+        span using
+        a(href='http://hexo.io')
+            span hexo blog framework
+        span .
+        br
+        a(href=config.root) Home
+if theme.scripts !== undefined && theme.scripts.length > 0
+    //- scripts list from config.yml
+    each url in theme.scripts
+        script(src=url)

@@ -1,0 +1,229 @@
+@charset "utf-8";
+/*
+ * player setting
+ */
+.setting {
+	position: relative;
+}
+
+.setting-inner {
+	max-width: 640px;
+	margin: 8em auto 3em;
+	padding: 2em;
+	border-radius: 4px;
+	background-color: #ddd
+}
+
+.setting-inner .title {
+	text-align: center;
+	margin-bottom: 2em;
+	font-weight: 900;
+    font-size: 30px;
+    color: #444;
+}
+
+.sava-setting #mid,
+.sava-setting #mnum,
+#music-type {
+	width: 14em;
+	padding: 0 10px;
+    height: 36px;
+    line-height: 36px;
+    box-sizing: content-box;
+    border-radius: 3px;
+}
+
+.sava-setting #mnum {
+	width: 5em;
+}
+
+#music-type {
+	width: 4em;
+	display: inline-block;
+    vertical-align: bottom;
+}
+
+
+.sava-setting .checkbox-menu {
+	text-align: left;
+	display: inline-block;
+    width: 100%;
+    margin: 0;
+}
+
+.checkbox-menu label {
+	margin-right: 15px;
+}
+
+.sava-setting .checkbox-menu input {
+	border-radius: 100%;
+	vertical-align: sub
+}
+
+.sava-setting .checkbox-menu span {
+	margin-left: 5px;
+	display: block;
+    margin-bottom: 10px;
+    margin-top: -6px;
+}
+
+.sava-setting input.button {
+	height: auto;
+	padding: 8px 20px;
+	border-radius: 3px;
+	float: right;
+    text-align: center;
+    margin: 2px;
+    color: #fff;
+    border: 0;
+    opacity: .85;
+}
+
+.sava-setting input.button:hover,
+.sava-setting input.button:focus {
+	color: #fff;
+	font-weight: 600;
+	opacity: 1;
+}
+
+.checkbox-source {
+	padding: 15px 0 15px;
+}
+
+.checkbox-source label {
+	margin-right: 15px;
+}
+
+.sava-setting input.netease-cookies {
+	width: 100%;
+	margin: 15px 0;
+	padding: 6px;
+	border-radius: 0;
+}
+
+#music-help {
+	position: absolute;
+	top: -20px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 690px;
+	height: 498px;
+	border-radius: 5px;
+	background: #363b3f;
+	display: none;
+}
+
+#music-help .inner {
+	color: #fff;
+	padding: 2em;
+}
+
+#music-help h3 {
+	color: #fff;
+	line-height: 0;
+}
+
+#music-help p {
+	margin: 3px 0 26px;
+}
+
+#music-help .inner span {
+	float: left;
+}
+
+#music-help .inner ul {
+	display: table;
+	margin-left: 7em;
+	margin-bottom: 2em;
+}
+
+#music-help .inner code {
+	background: #000;
+	border-radius: 2px;
+}
+
+.bgm-guide {
+	float: right;
+	margin-top: -20px;
+    margin-right: -16px;
+}
+
+.bgm-guide a {
+	padding: 3px;
+}
+
+#help-close {
+	float: right;
+	padding: 6px 10px;
+	font-size: 14px;
+	color: #fff;
+	cursor: pointer;
+}
+
+#insert-music {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+	z-index: 100050;
+	background: rgba(0, 0, 0, 0.38);
+	display: none;
+}
+
+.insert-music-content {
+	width: 100%;
+	height: auto;
+	max-width: 533px;
+	margin: auto;
+	padding: 2em;
+	overflow: hidden;
+	border-radius: 6px;
+	box-sizing: border-box;
+	position: absolute;
+	background: #fff;
+	box-shadow: 0px 8px 50px;
+	transform: translate3d(100%, 40%, 0px);
+}
+
+.insert-music-content h3 {
+	margin-top: 0;
+	margin-bottom: 0
+}
+
+.insert-music-content .help-text {
+	display: block;
+    font-size: 11px;
+    padding: 3px 0 16px;
+}
+
+.insert-music-content p {
+	padding-bottom: 1em;
+}
+
+.insert-music-content p input{
+	margin-left: 13px;
+	font-size: 13px;
+}
+
+#insert-data-close {
+	margin-right: 5px
+}
+
+#insert-music .postdata {
+	padding: 10px 0 0;
+	text-align: right;
+}
+
+.insert-music-content span {
+	color: #000;
+}
+
+.cover_upload_button.button {
+	height: 26px;
+    line-height: 26px;
+    margin-left: 3px;
+}

@@ -1,0 +1,125 @@
+/* Temporary CSS Update in 2018-07-05 */
+a,
+.list .hot,
+.comment-to,
+.blogname .ca-icon,
+.trends .state-count,
+.master-info-small .nickname,
+.gotop,
+.share,
+#share a:hover,
+.content h2:before,
+.ajax-edit .edit-cue a,
+.comment-examine .open-link,
+.player .list .playing,
+.lyric-text .geci_attention,
+.player .list li:hover,
+.player .control .item:hover,
+.archives .list li a:hover,
+.list .title a:hover,
+#overlay .full-link:hover {
+	color: #3abcbc;
+}
+
+.nav-menu a:hover,
+.main-menu .current-menu-item a {
+	border-color: #3abcbc;
+	color: #3abcbc;
+}
+
+#button, 
+.button a {
+	background: linear-gradient(left , rgba(59,164,191,0.99),rgba(59,164,191,0.99) 100%);
+	background: -o-linear-gradient(left , rgba(59,164,191,0.99),rgba(59,164,191,0.99) 100%);
+	background: -ms-linear-gradient(left , rgba(59,164,191,0.99),rgba(59,164,191,0.99) 100%);
+	background: -moz-linear-gradient(left , rgba(59,164,191,0.99),rgba(59,164,191,0.99) 100%);
+	background: -webkit-linear-gradient(left , rgba(59,164,191,0.99),rgba(59,164,191,0.99) 100%);
+}
+
+.checkbox-radio:checked + .radioinput:after {
+	background-color: #3abcbc;
+}
+
+.comment-reply,
+.children .comment-body:before,
+.loader .circle:after,
+#nprogress .bar {
+	background: #3abcbc;
+}
+
+.tips-temp:before {
+	border-bottom-color: #3abcbc;
+}
+.tips-temp:after {
+	background: #3abcbc;
+}
+
+#nprogress .peg {
+	box-shadow-color: 0 0 10px #3abcbc, 0 0 5px #3abcbc;
+}
+
+#nprogress .spinner-icon {
+	border-top-color: #3abcbc;
+	border-left-color: #3abcbc;
+}
+
+#notification .title {
+	border-color: #3abcbc;
+}
+
+.links-bar .item a:hover {
+	background: #3abcbc;
+	color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #3abcbc;
+}
+
+body {
+	font-family: PingFang SC,Hiragino Sans GB,Microsoft YaHei,STHeiti,WenQuanYi Micro Hei,Helvetica,Arial,sans-serif;
+	background: #f5f8fa;
+}
+
+.banner,#bgvideo {
+	height: 360px;
+}
+
+.banner:before {
+	background: linear-gradient(left , rgba(226,35,18,0.5),rgba(56,181,160,0.5) 100%);
+	background: -o-linear-gradient(left , rgba(226,35,18,0.5),rgba(56,181,160,0.5) 100%);
+	background: -ms-linear-gradient(left , rgba(226,35,18,0.5),rgba(56,181,160,0.5) 100%);
+	background: -moz-linear-gradient(left , rgba(226,35,18,0.5),rgba(56,181,160,0.5) 100%);
+	background: -webkit-linear-gradient(left , rgba(226,35,18,0.5),rgba(56,181,160,0.5) 100%);
+}
+
+.sns-avatar.max {
+	border-radius:12px
+}
+
+.avatar-200 {
+	border-radius:8px
+}
+.avatar-36,
+.avatar-42,
+.avatar-75 {
+	border-radius:4px
+}
+
+.avatar-24 {
+	border-radius:3px
+}
+
+.content .tags a {
+	border-radius:2px
+}
+
+#button,
+#commentform input,
+#commentform textarea,
+.button a,
+.hot-comment .image img,
+.links-bar .item a,
+.list .topic-thumb {
+	border-radius:3px
+}
