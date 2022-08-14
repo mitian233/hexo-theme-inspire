@@ -26,22 +26,24 @@ bannerPic: /images/email.jpg
 # Available themes: arta, dark, default, idea, ocean, rainbow, schoolbook, tomorrow
 highlightTheme: arta
 
+#footer settings
+footer:
+  enable: true
+  owner:
+    enable: true
+    since: 2018
+  beian:
+    enalbe: false
+    ICP-beian-number: 1234567890
+  custom_text: Thank you for reading my blog. :)
+
+
 
 # stylesheets loaded in the <head>
 stylesheets:
 - /css/Inspire.css
-- /css/style.css
-- /css/style.mobile.css
-- /css/fonts.css
-- /css/custom.css
 
 # scripts loaded in the end of the body
 scripts:
-- /js/Inspire.js
-- /js/headroom.min.js
-- /js/init.js
-- /js/input.min.js
-- /js/project.js
-- /js/setting.js
-- /js/support.js
-- /js/app.js
+-
+

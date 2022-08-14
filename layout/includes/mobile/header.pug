@@ -1,0 +1,18 @@
+section(id='mobilebar')
+    div(class='inner width icon')
+        div(class='col back')
+            a(href=config.url, one-link-mark='yes')
+                i(class='fa fa-home')
+        div(class='col title')=config.title
+        div(class='col switch')
+            a(href='javascript:display_item(\'overlay\');' one-link-mark='yes')
+                i(class='fa fa-bars')
+section(id='overlay', class='mobile', style='display: none;')
+    #m-menu
+        .inner
+            ul(class='nav-menu m-menu')
+                each url, label in theme.appbar
+                    li(class='menu-item menu-item-type-custom menu-item-object-custom')
+                        a(href=url, one-link-mark='yes')=label
+                li(class='menu-item menu-item-type-custom menu-item-object-custom')
+                    a(href='javascript:hide_item(\'overlay\');', one-link-mark='yes')='Close Menu'

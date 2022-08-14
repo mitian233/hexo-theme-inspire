@@ -1,11 +1,14 @@
-
-- var pageTitle = page.title || config.subtitle || ''
-- if (is_archive()) pageTitle = 'Archives'
-- if (is_tag()) pageTitle = 'Tag: ' + page.tag
-- if (is_category()) pageTitle = 'Category: ' + page.category
-- if (is_month()) pageTitle += ': ' + page.month + '/' + page.year
-- if (is_year()) pageTitle += ': ' + page.year
-- pageTitle += ' [ ' + config.title + ' ]'
+-
+  var pageTitle = page.title || config.subtitle || ''
+  if (is_archive()) pageTitle = 'Archives'
+  if (is_tag()) pageTitle = 'Tag: ' + page.tag
+  if (is_category()) pageTitle = 'Category: ' + page.category
+  if (is_month()) pageTitle += ': ' + page.month + '/' + page.year
+  if (is_year()) pageTitle += ': ' + page.year
+  if (pageTitle == '')
+    pageTitle = config.title
+  else
+    pageTitle +=' | ' + config.title
 
 doctype html
 html(lang=config.language)
@@ -15,10 +18,22 @@ html(lang=config.language)
     title= pageTitle
     if theme.stylesheets !== undefined && theme.stylesheets.length > 0
       //- stylesheets list from _config.yml
+      link(rel='stylesheet', href='https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css')
+      each url in ['/css/style.css','/css/style.mobile.css','/css/fonts.css','/css/custom.css']
+        link(rel='stylesheet', href=url)
       link(rel='stylesheet', href='/css/code/'+theme.highlightTheme+'.css')
       each url in theme.stylesheets
         link(rel='stylesheet', href=url)
   body(class='page-template-default page')
     div(id='wrapper',class='theme')
+      include mobile/header.pug
       include header.pug
       include body.pug
+      if theme.footer.enable
+        include footer.pug
+    if theme.scripts !== undefined && theme.scripts.length > 0
+      //- scripts list from config.yml
+      each url in ['/js/headroom.min.js','/js/init.js','/js/input.min.js','/js/project.js','/js/setting.js','/js/support.js','/js/app.js','/js/Inspire.js']
+        script(src=url)
+      each url in theme.scripts
+        script(src=url)

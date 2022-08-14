@@ -1,0 +1,19 @@
+div(id='footer', class='site-footer')
+    div(class='inner textcenter')
+        .copyright
+            if theme.footer.owner.enable
+                - var now = new Date()
+                - var nowYear = now.getFullYear()
+                if theme.footer.owner.since && theme.footer.owner.since != nowYear
+                    span!= `&copy;${theme.footer.owner.since} - ${nowYear} By ${config.author}`
+                else
+                    span!= `&copy;${nowYear} By ${config.author}`
+            if theme.footer.custom_text
+                br
+                span!=`${theme.footer.custom_text}`
+            .power
+                span='Framework '
+                a(href='https://hexo.io')= 'Hexo'
+                span!=' | '
+                span= 'Theme '
+                a(href='https://github.com/mitian233/hexo-theme-inspire')= 'Inspire'
