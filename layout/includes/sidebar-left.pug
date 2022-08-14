@@ -2,8 +2,9 @@ aside(id='aside', class='left')
     .inner
         div(class='sns master-info')
             .info-base
-                h2(class='blogname')=config.title
-                i(class='fas fa-badge-check')
+                h2(class='blogname')
+                    span=config.title + ' '
+                    i(class='fa fa-check-circle')
                 .nickname=config.author
                 p.description=config.description
             ul.info-extras
