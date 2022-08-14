@@ -4,17 +4,17 @@ language: zh
 
 # Top menu
 topmenu:
-  主页: /
-  关于: /about
-  联系: /contact
-  归档: /archives
+  主页: / || fa fa-home
+  关于: /about || fa fa-info
+  联系: /contact || fa fa-phone
+  归档: /archives || fa fa-bookmark
 
 # appbar navigation
 appbar:
-  Home: /
-  About: /about
-  Contact: /contact
-  Archives: /archives
+  Home: / || fa fa-home
+  About: /about || fa fa-info
+  Contact: /contact || fa fa-phone
+  Archives: /archives || fa fa-bookmark
 
 # avatar
 avatar: /images/avatar.jpg
@@ -37,7 +37,24 @@ footer:
     ICP-beian-number: 1234567890
   custom_text: Thank you for reading my blog. :)
 
+# leftbar
+leftbar:
+  location: 'Maebashi,Gunma,Japan'
+  homeLink: 'https://mikan.fun/'
+  socialLink:
+    Email: mailto:kasumi@bangdream.moe || fa fa-envelope
+    Github: https://github.com/mitian233 || fa fa-github
+    Twitter: https://twitter.com/mikan_chn || fa fa-twitter
+  my-gossips:
+    - Time and tide wait for no man.
+    - Action speak louder than words.
+    - Where there is a will, there is a way.
 
+# rightbar
+rightbar:
+  image:
+  custom_text: Thank you for reading my blog. :)
+  display_posts: true
 
 # stylesheets loaded in the <head>
 stylesheets:

@@ -1,0 +1,22 @@
+aside(id='aside', class='left')
+    .inner
+        div(class='sns master-info')
+            .info-base
+                h2(class='blogname')=config.title
+                i(class='fas fa-badge-check')
+                .nickname=config.author
+                p.description=config.description
+            ul.info-extras
+                if theme.leftbar.location
+                    li(class='item location')
+                        span!=`${theme.leftbar.location}`
+                if theme.leftbar.homeLink
+                    li(class='item site')
+                        a(href=theme.leftbar.homeLink)!=`${theme.leftbar.homeLink}`
+            .info-actions
+                each value, label in theme.leftbar.socialLink
+                    - const valueArray = value.split('||')
+                    .item
+                        a.tips-top(href=trim(valueArray[0]), rel='nofollow', target='_blank', id='button')
+                            i(class=valueArray[1])
+                            span=' ' + label

@@ -3,9 +3,12 @@ header(id='header', class='site-header')
         div(class='inner width')
             nav(class='nav pull-left')
                 ul(class='nav-menu top-menu icon')
-                    each url, label in theme.topmenu
+                    each value, label in theme.topmenu
+                        - const valueArray = value.split('||')
                         li(class='menu-item menu-item-type-post_type menu-item-object-page')
-                            a(href=url, one-link-mark='yes')=label
+                            a(href=trim(valueArray[0]), one-link-mark='yes')
+                                i(class=valueArray[1])
+                                span=' '+label
     section(class='banner bg', style='background-image:url('+theme.bannerPic+')', data-time='20000')
         div(id='banner-data' style='display:none')
             img(id='banner-0', src=theme.bannerPic)

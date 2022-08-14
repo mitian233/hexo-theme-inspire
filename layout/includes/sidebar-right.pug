@@ -1,0 +1,8 @@
+aside(id='aside', class='right')
+    .inner
+        .widget
+            h3(class='widget-title')='Informations'
+            .textwidget
+                if theme.rightbar.image
+                    img(src=theme.rightbar.image)
+                p=theme.rightbar.custom_text

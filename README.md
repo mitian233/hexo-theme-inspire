@@ -7,7 +7,10 @@
  Please wait for the first release.
 ## Completed tasks
 * [x] Header
-* [ ] Footer
+* [x] Footer
+* [x] Mobile View
+* [ ] Post layout
+* [ ] Code Theme
 * [ ] Sidebar
 * [ ] Pagination
 * [ ] Comments Plugins

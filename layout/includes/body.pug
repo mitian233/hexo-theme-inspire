@@ -13,13 +13,13 @@ div(id='container', class='site-refresh')
                             div(class='nickname')=config.suthor
                 nav(class='nav pull-left', role='navigation', itemscope, itemtype='http://schema.org/SiteNavigationElement')
                     ul(class='nav-menu main-menu')
-                        each url, label in theme.appbar
+                        each value, label in theme.appbar
+                            - const valueArray = value.split('||')
                             li(class='menu-item menu-item-type-custom menu-item-object-custom')
-                                a(href=url, one-link-mark='yes')=label
+                                a(href=valueArray[0], one-link-mark='yes')
+                                    i(class=valueArray[1])
+                                    span=' '+label
+    section(id='contents', class='width')
+        include sidebar-left.pug
+        include main.pug
 
-#content-outer
-    #content-inner
-        if body
-            div!= body
-        else
-            block content
