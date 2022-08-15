@@ -10,8 +10,9 @@
 * [x] Footer
 * [x] Mobile View
 * [x] Post layout
-* [ ] Code Theme
+* [x] Code Highlight
 * [x] Sidebar
+* [ ] Search
 * [ ] Pagination
 * [ ] Comments Plugins
 * [x] Metadata(open graph and Twitter card)
