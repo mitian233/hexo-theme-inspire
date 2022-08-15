@@ -25,7 +25,7 @@ html(lang=config.language)
       each url in theme.stylesheets
         link(rel='stylesheet', href=url)
   body(class='page-template-default page')
-    div(id='wrapper',class='theme')
+    #wrapper.theme
       include mobile/header.pug
       include header.pug
       include body.pug

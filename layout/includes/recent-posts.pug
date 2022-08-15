@@ -1,9 +1,14 @@
 
 if page.posts.length > 0
-  #recent-posts
-    h1 Recent Posts
+  #primary.list
     each post in page.posts.sort('date', -1).limit(10).toArray()
-      .recent-post-item
-        a(href=url_for(post.path))= post.title
-        if post.date
-          time(datetime=post.date.toJSON())= date(post.date, date_format)
+      article#post.post.type-post.status-publish.format-standard.has-post-thumbnail.hentry
+        .entry-header.pull-left
+          a.topic-thumb.bg.tips-right(style='background-image: url(' + url_for(theme.avatar) + ')', aria-label=config.author)
+        .entry-content.w-50
+          .meta
+            span.nickname='@'+config.author+' '
+            if post.date
+              time(itemprop='datePublished', datetime=post.date.toJSON())= date(post.date, date_format)
+          h2.title
+            a(href=url_for(post.path), rel='bookmark')=post.title
