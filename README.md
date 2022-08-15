@@ -9,8 +9,11 @@
 * [x] Header
 * [x] Footer
 * [x] Mobile View
-* [ ] Post layout
+* [x] Post layout
 * [ ] Code Theme
-* [ ] Sidebar
+* [x] Sidebar
 * [ ] Pagination
 * [ ] Comments Plugins
+* [ ] Metadata(open graph and Twitter card)
+## Preview
+![Theme preview](source/images/preview.png)
