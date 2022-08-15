@@ -21,9 +21,9 @@ avatar: /images/avatar.jpg
 # Banner
 bannerPic: /images/email.jpg
 
-# Code highlight theme
+# Code highlight theme (not available)
 # Available themes: arta, dark, default, idea, ocean, rainbow, schoolbook, tomorrow
-highlightTheme: arta
+# highlightTheme: arta
 
 #footer settings
 footer:

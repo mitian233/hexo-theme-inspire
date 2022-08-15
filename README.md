@@ -14,6 +14,6 @@
 * [x] Sidebar
 * [ ] Pagination
 * [ ] Comments Plugins
-* [ ] Metadata(open graph and Twitter card)
+* [x] Metadata(open graph and Twitter card)
 ## Preview
 ![Theme preview](source/images/preview.png)

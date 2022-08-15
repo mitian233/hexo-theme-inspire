@@ -1,0 +1,23 @@
+.content pre,.content .highlight {background:#2d2d2d;margin:1.6rem 0;padding:0.8rem 0.8rem;border-style:solid;border-width:1px 0;overflow:auto;color:#ccc;line-height:20px;}
+.content .gutter {display:none;}
+.content .highlight .gutter pre {color:#666;font-size:0.9rem;}
+.content code,.content pre {font-family:"JetBrains Mono","Source Code Pro",courier,monospace}
+.content code {background:rgba(99,99,99,0.07);color:#ef459c;padding:1px 2px;border-radius:2px;}
+.content pre code {background:none;text-shadow:none;padding:0;}
+.content .highlight .gutter pre {color:#666;font-size:0.9rem;}
+.content .highlight pre {border:none;margin:0;padding:0;}
+.content .highlight table {margin:0;width:auto;}
+.content .highlight td {border:none;padding:0;}
+.content .highlight tr {border:0;}
+.content .highlight figcaption {font-size:0.85em;color:#999;line-height:1em;margin-bottom:1em;}
+.content .highlight figcaption a {float:right;}
+.content .highlight .gutter pre {text-align:right;padding-right:20px;}
+.content .highlight .line {height:20px;}
+pre .comment,pre .title {color:#999;}
+pre .variable,pre .attribute,pre .tag,pre .regexp,pre .ruby .constant,pre .xml .tag,pre .title,pre .xml .pi,pre .xml .doctype,pre .html .doctype,pre .css .id,pre .css .class,pre .css .pseudo {color:#f2777a;}
+pre .number,pre .preprocessor,pre .built_in,pre .literal,pre .params,pre .constant {color:#f99157;}
+pre .class,pre .ruby .class .title,pre .css .rules .attribute {color:#99cc99;}
+pre .string,pre .value,pre .inheritance,pre .header,pre .ruby .symbol,pre .xml .cdata {color:#99cc99;}
+pre .css .hexcolor {color:#66cccc;}
+pre .function,pre .python .decorator,pre .python .title,pre .ruby .function .title,pre .ruby .title .keyword,pre .perl .sub,pre .javascript .title,pre .coffeescript .title {color:#6699cc;}
+pre .keyword,pre .javascript .function {color:#cc99cc;}

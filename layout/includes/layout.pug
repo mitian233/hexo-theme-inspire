@@ -20,9 +20,9 @@ html(lang=config.language)
     if theme.stylesheets !== undefined && theme.stylesheets.length > 0
       //- stylesheets list from _config.yml
       link(rel='stylesheet', href='https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css')
-      each url in ['/css/style.css','/css/style.mobile.css','/css/fonts.css','/css/custom.css']
+      each url in ['/css/style.css','/css/style.mobile.css','/css/fonts.css','/css/custom.css', '/css/highlight.css']
         link(rel='stylesheet', href=url)
-      link(rel='stylesheet', href='/css/code/'+theme.highlightTheme+'.css')
+      //link(rel='stylesheet', href='/css/code/'+theme.highlightTheme+'.css')
       each url in theme.stylesheets
         link(rel='stylesheet', href=url)
   body(class='page-template-default page')

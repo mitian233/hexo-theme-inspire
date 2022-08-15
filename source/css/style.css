@@ -875,7 +875,7 @@ html.fix {
     transform:rotateZ(180deg);
     -ms-transform:rotateZ(180deg);     /* IE 9 */
     -moz-transform:rotateZ(180deg);    /* Firefox */
-    -webkit-transform:rotate(Z180deg); /* Safari 和 Chrome */
+    -webkit-transform:rotate(180deg); /* Safari 和 Chrome */
     -o-transform:rotateZ(180deg);  /* Opera */
 }
 
@@ -912,7 +912,7 @@ html.fix {
     top: 0;
     width: 153px;
     height: 100%;
-    background: url(../../images/cover.png) 0 0 no-repeat;
+    background: url(../images/cover.png) 0 0 no-repeat;
     background-size: contain;
     pointer-events: none;
 }
@@ -1210,7 +1210,7 @@ html.fix {
 
 .attachmentimage .item {
     float: left;
-    width: 83px
+    width: 83px;
     height: 83px;
     margin: 5px 5px 0 0;
     overflow: hidden;
