@@ -1,0 +1,15 @@
+footer:
+  framework: Framework
+  themename: Theme
+
+page:
+  recent_posts: Recent Posts
+  close_menu: Close Menu
+  archive: Archive
+  categories: Categories
+  tags: Tags
+
+sidebar:
+  information: Information
+  my_gossips: My gossips
+

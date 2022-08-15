@@ -6,8 +6,12 @@ block content
   - var tagsList = list_tags({ show_count: false })
   - var archivesList = list_archives({ show_count: false })
 
+    main#main.archive-main.width-half(role='main', itemprop='mainContentOfPage', itemscope, itemtype='http://schema.org/Blog')
+        .heading
+            .inner
+                h1.title(itemprop='name')=__('page.archive')
     #primary.content
-      div.archive
+      .archive
         if !is_year()
 
           h1 Archives

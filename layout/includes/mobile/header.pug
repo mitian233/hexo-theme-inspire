@@ -11,8 +11,13 @@ section(id='overlay', class='mobile', style='display: none;')
     #m-menu
         .inner
             ul(class='nav-menu m-menu')
-                each url, label in theme.appbar
+                each value, label in theme.appbar
+                    - const valueArray = value.split('||')
                     li(class='menu-item menu-item-type-custom menu-item-object-custom')
-                        a(href=url, one-link-mark='yes')=label
+                        a(href=url_for(trim(valueArray[0])), one-link-mark='yes')
+                            i(class=valueArray[1])
+                            span=' '+label
                 li(class='menu-item menu-item-type-custom menu-item-object-custom')
-                    a(href='javascript:hide_item(\'overlay\');', one-link-mark='yes')='Close Menu'
+                    a(href='javascript:hide_item(\'overlay\');', one-link-mark='yes')
+                        i.fa.fa-times
+                        span=' '+__('page.close_menu')

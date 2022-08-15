@@ -1,0 +1,14 @@
+footer:
+  framework: フレームワーク
+  themename: テーマ
+
+page:
+  recent_posts: 最新の記事
+  close_menu: メニューを閉じる
+  archive: アーカイブ
+  categories: カテゴリー
+  tags: タグ
+
+sidebar:
+  information: お知らせ
+  my_gossips: ゴシップ

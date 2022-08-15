@@ -1,8 +1,15 @@
 aside(id='aside', class='right')
     .inner
         .widget
-            h3(class='widget-title')='Informations'
+            h3(class='widget-title')=__('sidebar.information')
             .textwidget
                 if theme.rightbar.image
                     img(src=theme.rightbar.image)
                 p=theme.rightbar.custom_text
+            if theme.rightbar.my_gossips.enable
+                h3(class='widget-title')=__('sidebar.my_gossips')
+                .textwidget
+                    each value in theme.rightbar.my_gossips.contents
+                        i.fa.fa-pencil
+                        span=' '+value
+                        br

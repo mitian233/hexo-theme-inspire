@@ -1,0 +1,14 @@
+footer:
+  framework: 框架
+  themename: 主题
+
+page:
+  recent_posts: 最新文章
+  close_menu: 关闭菜单
+  archive: 汇整
+  categories: 分类
+  tags: 标签
+
+sidebar:
+  information: 通知
+  my_gossips: 闲言碎语

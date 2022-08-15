@@ -1,13 +1,12 @@
-
 # html lang
-language: zh
+language: ja
 
 # Top menu
 topmenu:
-  主页: / || fa fa-home
-  关于: /about || fa fa-info
-  联系: /contact || fa fa-phone
-  归档: /archives || fa fa-bookmark
+  ホーム: / || fa fa-home
+  について: /about || fa fa-info
+  コンタクト: /contact || fa fa-phone
+  アーカイブ: /archives || fa fa-bookmark
 
 # appbar navigation
 appbar:
@@ -35,7 +34,7 @@ footer:
   beian:
     enalbe: false
     ICP-beian-number: 1234567890
-  custom_text: Thank you for reading my blog. :)
+  custom_text: Thank you for reading my blog. :) #if empty element will not display
 
 # leftbar
 leftbar:
@@ -45,16 +44,18 @@ leftbar:
     Email: mailto:kasumi@bangdream.moe || fa fa-envelope
     Github: https://github.com/mitian233 || fa fa-github
     Twitter: https://twitter.com/mikan_chn || fa fa-twitter
-  my-gossips:
-    - Time and tide wait for no man.
-    - Action speak louder than words.
-    - Where there is a will, there is a way.
 
 # rightbar
 rightbar:
-  image:
-  custom_text: Thank you for reading my blog. :)
+  image: #if empty element will not display
+  custom_text: Thank you for reading my blog. :) #if empty element will not display
   display_posts: true
+  my_gossips:
+    enable: true
+    contents:
+      - Time and tide wait for no man.
+      - Action speak louder than words.
+      - Where there is a will, there is a way.
 
 # stylesheets loaded in the <head>
 stylesheets:
