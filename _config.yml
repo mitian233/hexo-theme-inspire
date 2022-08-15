@@ -57,6 +57,11 @@ rightbar:
       - Action speak louder than words.
       - Where there is a will, there is a way.
 
+# enable metadata
+opengraph:
+  enable: true
+  default_image:
+
 # stylesheets loaded in the <head>
 stylesheets:
 - /css/Inspire.css

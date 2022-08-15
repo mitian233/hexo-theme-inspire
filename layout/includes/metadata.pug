@@ -1,0 +1,6 @@
+if theme.opengraph.enable
+    - let contentType = is_post() ? 'article' : 'website'
+    - let metaImage = (page.cover || theme.avatar) ? full_url_for(page.cover || theme.avatar) : ''
+    != open_graph({type: contentType, image: metaImage})
+else
+    meta(name="description" content=page_description())
