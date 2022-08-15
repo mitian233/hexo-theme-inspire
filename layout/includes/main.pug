@@ -1,9 +1,7 @@
 #loop.right
     main#main.width-half(role='main', itemprop='mainContentOfPage', itemscope, itemtype='http://schema.org/Blog')
-        #content-outer
-            #content-inner
-                if body
-                    div!= body
-                else
-                    block content
+        if body
+            div!= body
+        else
+            block content
     include sidebar-right.pug

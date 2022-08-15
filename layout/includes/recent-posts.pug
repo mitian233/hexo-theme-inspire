@@ -1,4 +1,3 @@
-
 if page.posts.length > 0
   #primary.list
     each post in page.posts.sort('date', -1).limit(10).toArray()
@@ -12,3 +11,19 @@ if page.posts.length > 0
               time(itemprop='datePublished', datetime=post.date.toJSON())= date(post.date, date_format)
           h2.title
             a(href=url_for(post.path), rel='bookmark')=post.title
+          .summary(itemprop='description')
+            if post.summary
+              span=post.summary
+            else
+              -
+                const contents = post.content
+                if (contents.length <= 300) {
+                  result = contents
+                } else {
+                  result = contents.slice(0, 300) + '...'
+                }
+              span!=result
+            if post.cover
+              a.entry-image(href=url_for(post.path))
+                img.entry-image(src=url_for(post.cover), itemprop='image')
+

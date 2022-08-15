@@ -1,7 +1,13 @@
 extends includes/layout.pug
 
 block content
-  article#page
-    h1= page.title
-    != page.content
-  #paginator!= paginator()
+  #primary.content
+    article#post.post.type-post.status-publish.format-standard.has-post-thumbnail.hentry
+      header.entry-header
+        h1.title(itemprop='name')=page.title
+        .meta
+          span.nickname='@' + config.author + ' '
+          if page.date
+            time(itemprop='datePublished', datetime=page.date.toJSON())= date(page.date, date_format)
+      .entry-content(itemprop='articleBody')!= page.content
+    #paginator!= paginator()
