@@ -15,6 +15,11 @@ appbar:
   Contact: /contact || fa fa-phone
   Archives: /archives || fa fa-bookmark
 
+# search
+search:
+  enable: true
+  address: /search
+
 # avatar
 avatar: /images/avatar.jpg
 

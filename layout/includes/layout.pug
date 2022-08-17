@@ -21,11 +21,11 @@ html(lang=config.language)
       //- stylesheets list from _config.yml
       link(rel='stylesheet', href='https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css')
       each url in ['/css/style.css','/css/style.mobile.css','/css/fonts.css','/css/custom.css', '/css/highlight.css']
-        link(rel='stylesheet', href=url)
+        link(rel='stylesheet', href=url_for(url))
       //link(rel='stylesheet', href='/css/code/'+theme.highlightTheme+'.css')
       each url in theme.stylesheets
-        link(rel='stylesheet', href=url)
-  body(class='page-template-default page')
+        link(rel='stylesheet', href=url_for(url))
+  body.page-template-default.page
     #wrapper.theme
       include mobile/header.pug
       include header.pug
@@ -35,6 +35,6 @@ html(lang=config.language)
     if theme.scripts !== undefined && theme.scripts.length > 0
       //- scripts list from config.yml
       each url in ['/js/headroom.min.js','/js/init.js','/js/input.min.js','/js/project.js','/js/setting.js','/js/support.js','/js/app.js','/js/Inspire.js']
-        script(src=url)
+        script(src=url_for(url))
       each url in theme.scripts
-        script(src=url)
+        script(src=url_for(url))

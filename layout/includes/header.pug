@@ -1,17 +1,24 @@
 #header.site-header
-    section(class='topbar')
+    section.topbar
         .inner.width
-            nav(class='nav pull-left')
-                ul(class='nav-menu top-menu icon')
+            nav.nav.pull-left
+                ul.nav-menu.top-menu.icon
                     each value, label in theme.topmenu
                         - const valueArray = value.split('||')
-                        li(class='menu-item menu-item-type-post_type menu-item-object-page')
+                        li.menu-item.menu-item-type-post_type.menu-item-object-page
                             a(href=url_for(trim(valueArray[0])), one-link-mark='yes')
                                 i(class=valueArray[1])
                                 span=' '+label
-    section(class='banner bg', style='background-image:url('+url_for(theme.bannerPic)+')', data-time='20000')
+            .meta.pull-right
+                if theme.search.enable
+                    .logged.button
+                        a.login(href=url_for(theme.search.address), one-link-mark='yes')
+                            li.fa.fa-search
+                            span=__('page.search')
+
+    section.banner.bg(style='background-image:url(' + url_for(theme.bannerPic) + ')', data-time='20000')
         #banner-data(style='display:none')
             img(id='banner-0', src=url_for(theme.bannerPic))
         .sns.master-info.width
-            a(href=config.url, class='sns-avatar max' style='margin-bottom: 0px;', one-link-mark='yes')
-                img(src=url_for(theme.avatar), width='200', class='avatar avatar-200')
+            a.sns-avatar.max(href=config.url, style='margin-bottom: 0px;', one-link-mark='yes')
+                img.avatar.avatar-200(src=url_for(theme.avatar), width='200')

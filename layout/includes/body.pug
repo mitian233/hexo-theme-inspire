@@ -7,19 +7,19 @@
                         .middle
                             .sns-avatar.min
                                 a(href=config.url, one-link-mark='yes')
-                                    img(src=theme.avatar, width='36', class='avatar avatar-36')
+                                    img.avatar.avatar-36(src=theme.avatar, width='36')
                         .middle-info
-                            h4(class='blogname')=config.title
+                            h4.blogname=config.title
                             .nickname=config.suthor
-                nav(class='nav pull-left', role='navigation', itemscope, itemtype='http://schema.org/SiteNavigationElement')
-                    ul(class='nav-menu main-menu')
+                nav.nav.pull-left(role='navigation', itemscope, itemtype='http://schema.org/SiteNavigationElement')
+                    ul.nav-menu.main-menu
                         each value, label in theme.appbar
                             - const valueArray = value.split('||')
-                            li(class='menu-item menu-item-type-custom menu-item-object-custom')
+                            li.menu-item.menu-item-type-custom.menu-item-object-custom
                                 a(href=url_for(trim(valueArray[0])), one-link-mark='yes')
                                     i(class=valueArray[1])
                                     span=' '+label
-    section(id='contents', class='width')
+    section#contents.width
         include sidebar-left.pug
         include main.pug
 
