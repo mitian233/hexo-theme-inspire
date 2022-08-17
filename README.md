@@ -6,10 +6,15 @@
 
  Alpha version released:
 
-```shell
-$ npm i hexo-theme-inspire@alpha
-```
+ 1. Get package with npm or yarn.
 
+    ```shell
+    $ npm i hexo-theme-inspire@alpha
+    ```
+
+ 2. Then copy `_config.yml` in the repository to your blog root directory and rename it as `_config.inspire.yml`.
+
+ 3. Enjoy it!
 ## Completed tasks
 * [x] Header
 * [x] Footer
