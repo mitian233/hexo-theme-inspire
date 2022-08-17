@@ -4,7 +4,12 @@
 
  Still under developing ...
 
- Please wait for the first release.
+ Alpha version released:
+
+```shell
+$ npm i hexo-theme-inspire@alpha
+```
+
 ## Completed tasks
 * [x] Header
 * [x] Footer
